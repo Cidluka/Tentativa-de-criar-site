@@ -1,0 +1,108 @@
+HTMl:
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Minha Página Pessoal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>Lucas V P de Castro</h1>
+
+  <p>
+    Opa, meu nome é Lucas, tenho 19 anos e sou de Santos. Não fiz muita coisa além de um curso de informática básica e de servir meu ano obrigatório. Primeiro emprego só agora e tive por sorte, mas o que importa é que dá dinheiro kkkkk 
+  </p>
+
+  <ul class = Algumas-coisas-que-eu-gosto>
+    <li>Escrever</li>
+    <li>Mestrar e jogar campanha de RPG de mesa</li>
+    <li>Jogar videogame</li>
+  </ul>
+
+  <img src="https://nuckturp.com.br/wp-content/uploads/2021/12/RPG-group-2-scaled.jpg" alt="Mesa de rpg com a sessão acontecendo" width="200">
+
+  <table>
+    <caption>Países que gostaria de visitar</caption>
+  <thead>
+    <tr>
+      <th>País</th>
+      <th>O que quero ver lá</th>
+    </tr>
+     <tr>
+      <td>França</td>
+      <td><img src="https://tse2.mm.bing.net/th/id/OIP.EDIGkWxQuicuuyfvmdKzAgHaEK?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" width="150"></td>
+     </tr>
+     <tr>
+      <td>Itália</td>
+      <td><img src="https://tse1.mm.bing.net/th/id/OIP.Dn0jjl-XzWKHcxgqUDKExQHaE8?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" width="150"></td>
+     </tr>
+     <tr>
+      <td>Canadá</td>
+      <td><img src="https://tse4.mm.bing.net/th/id/OIP.8GXQ-MWibUzXpkxsZQ3mcwHaD4?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" width="150"></td>
+     </tr>
+  </table>
+
+  <a href="https://www.youtube.com" target="_blank">Eu uso esse site quase 24h por dia</a>
+
+  <br><br>
+
+  <button onclick="mostrarMensagem()">Clique para ver uma mensagem!</button>
+  <p id="mensagem"></p>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
+
+CSS:
+
+body {
+  background-color: #d0fdd7; /* verde bem claro */
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+h1 {
+  color: #006064;
+  text-align: center;
+}
+
+p {
+  font-size: 18px;
+  text-align: justify;
+}
+
+ul {
+  line-height: 2;
+}
+
+img {
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 10px;
+  margin-top: 15px;
+}
+
+a {
+  color: #006064;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 20px;
+}
+
+a:hover {
+  color: #ff6f00;
+}
+
+Javascript:
+
+function mostrarMensagem() {
+  document.getElementById("mensagem").textContent = "Nunca desista de você mesmo!";
+}
